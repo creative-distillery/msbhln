@@ -1,3 +1,6 @@
+      </div> <!-- .container-fluid -->
+
+      <footer class="container-fluid">
         <div class="row footer">
 
           <div class="col-12 col-md-7">
@@ -45,6 +48,6 @@
 
       <?php wp_footer(); ?>
 
-    </div><!--.container-fluid-->
+    </footer><!--.container-fluid-->
   </body>
 </html>

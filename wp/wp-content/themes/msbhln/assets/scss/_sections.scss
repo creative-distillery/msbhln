@@ -19,6 +19,8 @@ $transparency: .8;
   }
 }
 
+// --- Header Section --- //
+
 .header-section {
 
   max-width: 100%;
@@ -40,7 +42,19 @@ $transparency: .8;
 
 }
 
+
+
+
+.default-header {
+  margin-bottom: 11rem;
+}
+
+
+
+// --- Events Section --- //
+
 .events-section {
+
   background-color: $orange;
   padding: 0 5%;
 
@@ -64,27 +78,16 @@ $transparency: .8;
       color: $accent-color;
     }
 
+
     .month {
-      @include sans-bold {
-        font-size: 4.8rem;
-      }
-      width: 100%;
+      @include event-month {font-size: 4.8rem;}
     }
+
+
     .date {
-      @include sans-light {
-        font-size: 12rem;
-      }
-      line-height: 10rem;
-
-      @media screen and (max-width: 1215px) {
-        font-size: 10rem;
-      }
-
-      display: inline;
-      border-right: 2px solid $accent-color;
-      padding-right: 1rem;
-
+      @include event-date {font-size: 12rem;};
     }
+
     .date-time {
       padding-left: 1.2rem;
       display: inline;
@@ -104,6 +107,10 @@ $transparency: .8;
   }
 
 }
+
+
+
+// --- News Section --- //
 
 .news-section {
   .title {
@@ -136,6 +143,9 @@ $transparency: .8;
 
 }
 
+
+// --- Partnership Section --- //
+
 .partnership-section {
   margin-bottom: 5rem;
 
@@ -151,6 +161,10 @@ $transparency: .8;
     width: 250px;
   }
 }
+
+
+
+// --- Footer --- //
 
 .footer {
   background-color: $light-grey;

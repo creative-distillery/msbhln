@@ -6,7 +6,7 @@ a {
   color: #808285;
   font-size: 1.6rem; }
 
-p {
+p, li {
   font-family: 'Proxima Nova', sans-serif;
   color: #808285;
   font-size: 2rem; }
@@ -35,21 +35,45 @@ h4 {
   font-size: 2.8rem;
   color: #808285; }
 
-.cd-btn {
+h5 {
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 1.8rem;
+  color: #808285; }
+
+ul {
+  -webkit-padding-start: 2rem; }
+
+.font-light {
+  font-weight: 200; }
+
+.cd-btn, .cd-btn-solid {
   border: 1px solid white;
   padding: 1rem 1.25rem;
+  border-radius: 1px;
   font-family: "Georgia", serif;
   font-style: italic; }
+  .cd-btn-solid {
+    background-color: #EC832F;
+    color: white;
+    border: 0px; }
 
 .color-accent {
   color: #EC832F; }
-  .color-accent.cd-btn {
+  .color-accent.cd-btn, .color-accent.cd-btn-solid {
     border-color: #EC832F; }
+
+.color-font {
+  color: #808285; }
+  .color-font.cd-btn, .color-font.cd-btn-solid {
+    border-color: #808285; }
 
 hr.seperator {
   margin: 4.6rem 4rem;
   border-top-color: #8BBEC3;
   border-top-width: 2px; }
+
+.page-title {
+  margin-left: 195px; }
 
 /*=== Navbar Styles===*/
 .navbar {
@@ -108,6 +132,9 @@ hr.seperator {
     margin-left: auto;
     margin-right: auto; }
 
+.default-header {
+  margin-bottom: 11rem; }
+
 .events-section {
   background-color: #EC832F;
   padding: 0 5%; }
@@ -128,19 +155,18 @@ hr.seperator {
     .events-section .event .month {
       font-family: 'Proxima Nova', sans-serif;
       font-weight: 700;
-      font-size: 4.8rem;
-      width: 100%; }
+      width: 100%;
+      color: #EC832F;
+      font-size: 4.8rem; }
     .events-section .event .date {
       font-family: 'Proxima Nova', sans-serif;
       font-weight: 200;
-      font-size: 12rem;
       line-height: 10rem;
       display: inline;
       border-right: 2px solid #EC832F;
-      padding-right: 1rem; }
-      @media screen and (max-width: 1215px) {
-        .events-section .event .date {
-          font-size: 10rem; } }
+      padding-right: 1rem;
+      color: #EC832F;
+      font-size: 12rem; }
     .events-section .event .date-time {
       padding-left: 1.2rem;
       display: inline; }
@@ -148,7 +174,7 @@ hr.seperator {
       font-size: 3.2rem; }
     .events-section .event .excerpt p {
       color: #808285; }
-    .events-section .event .cd-btn {
+    .events-section .event .cd-btn, .events-section .event .cd-btn-solid {
       border-color: #EC832F;
       color: #EC832F; }
 
@@ -166,7 +192,7 @@ hr.seperator {
     width: 100%;
     max-width: 100%;
     padding-right: 2rem; }
-  .news-section .content .cd-btn {
+  .news-section .content .cd-btn, .news-section .content .cd-btn-solid {
     border-color: #808285;
     display: inline; }
 
@@ -213,5 +239,59 @@ hr.seperator {
     max-width: 100%;
     max-height: 100%;
     margin-top: 4.3rem; }
+
+.post-type-archive-events .event .month {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 700;
+  width: 100%;
+  color: #EC832F;
+  font-size: 3.6rem;
+  margin-bottom: 0; }
+.post-type-archive-events .event .date {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 200;
+  line-height: 10rem;
+  display: inline;
+  border-right: 2px solid #EC832F;
+  padding-right: 1rem;
+  color: #EC832F;
+  font-size: 7.2rem;
+  border: none;
+  padding: 0; }
+
+.single-events .container-fluid {
+  margin-left: 200px;
+  width: calc(100% - 200px); }
+.single-events footer {
+  margin-left: auto !important;
+  width: 100% !important; }
+.single-events .info-bar {
+  background-color: rgba(128, 130, 133, 0.1);
+  margin-right: inherit;
+  padding: 2rem 3rem; }
+  .single-events .info-bar img {
+    margin-right: 1.6rem;
+    color: #808285; }
+  .single-events .info-bar h4 {
+    margin-bottom: 0; }
+  .single-events .info-bar p {
+    font-size: 2.4rem; }
+  .single-events .info-bar .cd-btn-solid {
+    padding-left: 4.5rem;
+    padding-right: 4.5rem; }
+.single-events h1 {
+  margin-bottom: 3.5rem; }
+.single-events .row.events {
+  margin-top: 5.5rem;
+  margin-bottom: 5.5rem; }
+.single-events .location {
+  border: 1px solid #808285;
+  padding: 3rem 0; }
+  .single-events .location p {
+    margin-bottom: 2rem;
+    font-size: 2.4rem; }
+  .single-events .location .cd-btn, .single-events .location .cd-btn-solid {
+    border: 1px solid #808285;
+    margin-top: 1rem; }
 
 /*# sourceMappingURL=styles.css.map */

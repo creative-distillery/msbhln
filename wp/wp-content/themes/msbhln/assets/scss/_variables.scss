@@ -14,3 +14,22 @@ $accent-color: $orange;
   margin-left: auto;
   margin-right: auto;
 }
+
+
+@mixin event-month {
+  @include sans-bold;
+  width: 100%;
+  color: $accent-color;
+  @content;
+}
+
+@mixin event-date {
+  @include sans-light;
+  line-height: 10rem;
+
+  display: inline;
+  border-right: 2px solid $accent-color;
+  padding-right: 1rem;
+  color: $accent-color;
+  @content;
+}

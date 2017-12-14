@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('home'); ?>
 
 <?php
 
@@ -21,19 +21,15 @@
 
     <?php while ( $query->have_posts() ) : $query->the_post(); ?>
 
-      <?php
-        $start_date = strtotime( get_field( 'start_date' ) );
-        $end_date = strtotime( get_field( 'end_date' ) );
-        $start_time = strtotime( get_field( 'start-time' ) );
-      ?>
+      <?php $date = strtotime( get_field( 'date' ) ); ?>
 
       <div class="col-12 col-md-4">
         <div class="event">
 
-          <p class="month"><?php echo date( 'M', $start_date ); ?></p>
-          <p class="date"><?php echo date( 'd', $start_date ); ?></p>
+          <p class="month"><?php echo date( 'M', $date ); ?></p>
+          <p class="date"><?php echo date( 'd', $date ); ?></p>
           <div class="date-time">
-            <p class="day"><?php echo date( 'l', $start_date ); ?></p>
+            <p class="day"><?php echo date( 'l', $date ); ?></p>
             <p class="time"><?php the_field( 'start_time' ); ?></p>
           </div>
           <h3><?php the_title(); ?></h4>

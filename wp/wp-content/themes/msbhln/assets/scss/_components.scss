@@ -1,8 +1,16 @@
 .cd-btn {
   border: 1px solid white;
   padding: 1rem 1.25rem;
+  border-radius: 1px;
+
   @include serif-regular {
     font-style: italic;
+  }
+  &-solid {
+    @extend .cd-btn;
+    background-color: $accent-color;
+    color: white;
+    border: 0px;
   }
 }
 
@@ -13,8 +21,19 @@
   }
 }
 
+.color-font {
+  color: $font-color;
+  &.cd-btn {
+    border-color: $font-color;
+  }
+}
+
 hr.seperator {
   margin: 4.6rem 4rem;
   border-top-color: $teal;
   border-top-width: 2px;
+}
+
+.page-title {
+  margin-left: 195px;
 }

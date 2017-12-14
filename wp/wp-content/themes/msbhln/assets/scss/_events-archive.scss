@@ -1,0 +1,18 @@
+.post-type-archive-events {
+
+  .event {
+
+    .month {
+      @include event-month {font-size: 3.6rem;}
+
+      margin-bottom: 0;
+    }
+    .date {
+      @include event-date {font-size: 7.2rem;}
+      border: none;
+      padding: 0;
+    }
+    
+  }
+
+}

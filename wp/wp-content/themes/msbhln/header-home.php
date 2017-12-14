@@ -50,4 +50,15 @@
         </div>
       </nav>
 
+      <div class="row header-img">
+        <div class="col">
+          <div class="header-section">
+            <h1>Engage. Empower. Enhance.</h1>
+            <p>The Mississippi Behavioral Health Learning Network (MSBHLN) provides professional and workforce development to behavioral health providers.</p>
+            <a class="cd-btn" href="about">Learn More  <i class="fa fa-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+
     <div class="container-fluid">
