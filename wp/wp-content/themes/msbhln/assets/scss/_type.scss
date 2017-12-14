@@ -1,0 +1,70 @@
+html {
+  font-size: 10px;
+}
+
+@mixin sans-light {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 200;
+  @content;
+}
+@mixin sans-regular {
+  font-family: 'Proxima Nova', sans-serif;
+  @content;
+}
+@mixin sans-semibold {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 600;
+  @content;
+}
+@mixin sans-bold {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 700;
+  @content;
+}
+
+@mixin serif-regular {
+  font-family: "Georgia", serif;
+  @content;
+}
+
+a {
+  @include sans-regular {
+    color: $font-color;
+    font-size: 1.6rem;
+  }
+}
+
+p {
+  @include sans-regular {
+    color: $font-color;
+    font-size: 2rem;
+  }
+}
+
+h1 {
+  @include sans-bold {
+    font-size: 6.4rem;
+    color: $font-color;
+  }
+}
+h2 {
+  @include serif-regular {
+    font-size: 4.8rem;
+    font-style: italic;
+    color: $font-color;
+  }
+}
+
+h3 {
+  @include sans-semibold {
+    font-size: 3.6rem;
+    color: $font-color;
+  }
+}
+
+h4 {
+  @include sans-semibold {
+    font-size: 2.8rem;
+    color: $font-color;
+  }
+}

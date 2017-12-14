@@ -1,0 +1,217 @@
+html {
+  font-size: 10px; }
+
+a {
+  font-family: 'Proxima Nova', sans-serif;
+  color: #808285;
+  font-size: 1.6rem; }
+
+p {
+  font-family: 'Proxima Nova', sans-serif;
+  color: #808285;
+  font-size: 2rem; }
+
+h1 {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 700;
+  font-size: 6.4rem;
+  color: #808285; }
+
+h2 {
+  font-family: "Georgia", serif;
+  font-size: 4.8rem;
+  font-style: italic;
+  color: #808285; }
+
+h3 {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 600;
+  font-size: 3.6rem;
+  color: #808285; }
+
+h4 {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 600;
+  font-size: 2.8rem;
+  color: #808285; }
+
+.cd-btn {
+  border: 1px solid white;
+  padding: 1rem 1.25rem;
+  font-family: "Georgia", serif;
+  font-style: italic; }
+
+.color-accent {
+  color: #EC832F; }
+  .color-accent.cd-btn {
+    border-color: #EC832F; }
+
+hr.seperator {
+  margin: 4.6rem 4rem;
+  border-top-color: #8BBEC3;
+  border-top-width: 2px; }
+
+/*=== Navbar Styles===*/
+.navbar {
+  align-items: center;
+  background-color: white;
+  height: 9rem; }
+
+.cd-nav {
+  justify-content: flex-end;
+  padding: 2rem; }
+
+.navbar-toggler {
+  color: #EC832F; }
+
+.navbar-brand {
+  align-self: flex-start; }
+  .navbar-brand img {
+    height: 195px; }
+
+#menu-main-menu a {
+  text-transform: uppercase;
+  margin: 0 1.25rem; }
+
+#menu-cta-links a {
+  font-family: "Georgia", serif;
+  font-style: italic;
+  color: #EC832F;
+  border: 1px solid #EC832F;
+  padding: .5rem .75rem;
+  margin: 0 1.25rem; }
+
+.search-circle {
+  border: 1px solid #89BEC3;
+  border-radius: 50%;
+  margin: 0 .75rem; }
+  .search-circle i {
+    color: #89BEC3; }
+
+.header-img {
+  background-image: linear-gradient(rgba(139, 190, 195, 0.8), rgba(139, 190, 195, 0.8)), url("../img/bg-img-reduced2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.header-section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 10rem 0 10rem;
+  text-align: center; }
+  .header-section h1, .header-section p, .header-section a {
+    color: white;
+    margin: 3rem 0; }
+  .header-section p {
+    width: 670px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+
+.events-section {
+  background-color: #EC832F;
+  padding: 0 5%; }
+  .events-section .title {
+    text-align: center; }
+    .events-section .title h2 {
+      color: white;
+      padding: 1.5rem 0; }
+  .events-section .event {
+    background-color: white;
+    color: #808285;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-flow: row wrap; }
+    .events-section .event p {
+      color: #EC832F; }
+    .events-section .event .month {
+      font-family: 'Proxima Nova', sans-serif;
+      font-weight: 700;
+      font-size: 4.8rem;
+      width: 100%; }
+    .events-section .event .date {
+      font-family: 'Proxima Nova', sans-serif;
+      font-weight: 200;
+      font-size: 12rem;
+      line-height: 10rem;
+      display: inline;
+      border-right: 2px solid #EC832F;
+      padding-right: 1rem; }
+      @media screen and (max-width: 1215px) {
+        .events-section .event .date {
+          font-size: 10rem; } }
+    .events-section .event .date-time {
+      padding-left: 1.2rem;
+      display: inline; }
+    .events-section .event .day, .events-section .event .time {
+      font-size: 3.2rem; }
+    .events-section .event .excerpt p {
+      color: #808285; }
+    .events-section .event .cd-btn {
+      border-color: #EC832F;
+      color: #EC832F; }
+
+.news-section .title {
+  padding: 4rem 0;
+  color: #EC832F; }
+.news-section img {
+  width: 100%; }
+.news-section .content {
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center; }
+  .news-section .content h3, .news-section .content p {
+    width: 100%;
+    max-width: 100%;
+    padding-right: 2rem; }
+  .news-section .content .cd-btn {
+    border-color: #808285;
+    display: inline; }
+
+.partnership-section {
+  margin-bottom: 5rem; }
+  .partnership-section h3, .partnership-section p {
+    margin-bottom: 4rem; }
+  .partnership-section .logos {
+    display: flex;
+    justify-content: center; }
+  .partnership-section img {
+    width: 250px; }
+
+.footer {
+  background-color: #808285; }
+  @media screen and (min-width: 768px) {
+    .footer {
+      padding: 3.5rem 4rem; } }
+  .footer h2 {
+    margin-bottom: 3.5rem;
+    color: white; }
+  .footer p {
+    margin-bottom: 0;
+    color: white; }
+  .footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-bottom: 0; }
+  .footer .address {
+    margin-bottom: 2.6rem; }
+  .footer .numbers {
+    display: flex;
+    flex-flow: row nowrap; }
+    .footer .numbers div {
+      flex: 0 0 50%; }
+  .footer .logos div {
+    display: flex;
+    align-items: center; }
+  .footer .logos img {
+    width: 100%;
+    opacity: .4; }
+  .footer iframe {
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 4.3rem; }
+
+/*# sourceMappingURL=styles.css.map */

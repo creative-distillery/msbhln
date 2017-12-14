@@ -1,0 +1,16 @@
+$break: 768px;
+
+$light-grey: #808285;
+$orange: #EC832F;
+$light-blue: #89BEC3;
+$teal: #8BBEC3;
+
+
+$font-color: $light-grey;
+$accent-color: $orange;
+
+
+@mixin mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,54 @@
+/*=== Navbar Styles===*/
+
+//--- Layout ---//
+.navbar {
+  align-items: center;
+  background-color: white;
+  height: 9rem;
+}
+
+.cd-nav {
+  justify-content: flex-end;
+  padding: 2rem;
+}
+
+//--- Components ---//
+.navbar-toggler {
+  color: $accent-color;
+}
+
+.navbar-brand {
+  align-self: flex-start;
+  img {
+    height: 195px;
+  }
+}
+
+#menu-main-menu {
+  a {
+    text-transform: uppercase;
+    margin: 0 1.25rem;
+  }
+}
+
+#menu-cta-links {
+  a {
+    @include serif-regular {
+      font-style: italic;
+    }
+    color: $accent-color;
+    border: 1px solid $accent-color;
+    padding: .5rem .75rem;
+    margin: 0 1.25rem;
+  }
+}
+
+.search-circle {
+  border: 1px solid $light-blue;
+  border-radius: 50%;
+  // color: transparent;
+  margin: 0 .75rem;
+  i {
+    color: $light-blue;
+  }
+}

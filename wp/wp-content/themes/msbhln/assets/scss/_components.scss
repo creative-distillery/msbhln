@@ -1,0 +1,20 @@
+.cd-btn {
+  border: 1px solid white;
+  padding: 1rem 1.25rem;
+  @include serif-regular {
+    font-style: italic;
+  }
+}
+
+.color-accent {
+  color: $accent-color;
+  &.cd-btn {
+    border-color: $accent-color;
+  }
+}
+
+hr.seperator {
+  margin: 4.6rem 4rem;
+  border-top-color: $teal;
+  border-top-width: 2px;
+}
