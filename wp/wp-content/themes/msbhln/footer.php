@@ -4,7 +4,7 @@
         <div class="row footer">
 
           <div class="col-12 col-md-7">
-            <div class="row">
+            <div class="row text-center text-lg-left justify-content-center justify-content-lg-start">
               <h2>Contact Us</h2>
             </div>
             <div class="row">
@@ -26,7 +26,7 @@
             </div>
           </div>
 
-          <div class="row logos">
+          <div class="row logos mt-5 mt-lg-0">
             <div class="col-4">
               <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/MSBHLN-white.svg" alt="MSBHLN Logo"/>
             </div>

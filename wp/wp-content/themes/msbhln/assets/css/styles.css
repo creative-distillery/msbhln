@@ -342,6 +342,8 @@ hr.seperator {
 
 .post-type-archive-events .event .month-date {
   margin-right: 1.3rem; }
+.post-type-archive-events .event .month-date-mobile p {
+  line-height: 3.8rem; }
 .post-type-archive-events .event .info {
   margin-left: 1.3rem; }
 .post-type-archive-events .event .month {
