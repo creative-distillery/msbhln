@@ -1,0 +1,21 @@
+
+.container-fluid {
+  @media screen and (min-width: $break) {
+    margin-left: 200px;
+    width: calc(100% - 200px);
+  }
+}
+
+footer.container-fluid,
+.home .container-fluid {
+  @media screen and (min-width: $break) {
+    margin-left: auto !important;
+    width: 100% !important;
+  }
+}
+
+.default-header .container-fluid {
+  @media screen and (max-width: $break - 1) {
+    margin-top: 100px;
+  }
+}

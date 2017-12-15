@@ -1,6 +1,6 @@
       </div> <!-- .container-fluid -->
 
-      <footer class="container-fluid">
+      <footer class="container-fluid mt-5">
         <div class="row footer">
 
           <div class="col-12 col-md-7">

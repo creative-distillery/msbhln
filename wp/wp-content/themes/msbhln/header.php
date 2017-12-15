@@ -11,16 +11,16 @@
 
   </head>
 
-  <body <?php body_class(); ?>>
+  <body <?php body_class('default-header'); ?>>
 
 
-      <nav class="navbar navbar-expand-md">
+      <nav class="navbar navbar-expand-lg">
 
         <a class="navbar-brand" href="<?php bloginfo('url'); ?>">
           <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/MSBHLN-header-logo.png" alt="Mississippi Behavioral Health Learning Center"/>
         </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-controls="main_menu" aria-expanded="false" aria-label="Toggle Main Menu">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-controls="main_nav" aria-expanded="false" aria-label="Toggle Main Menu">
           <i class="fa fa-bars"></i>
         </button>
 
@@ -41,11 +41,11 @@
             wp_nav_menu( $ctaLinks );
           ?>
 
-          <a href="#">
+          <!-- <a href="#">
             <div class="search-circle">
               <i class="fa fa-search m-2"></i>
             </div>
-          </a>
+          </a> -->
 
         </div>
       </nav>

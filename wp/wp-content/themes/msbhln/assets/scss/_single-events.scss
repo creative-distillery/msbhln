@@ -1,19 +1,16 @@
 .single-events {
 
-  .container-fluid {
-    margin-left: 200px;
-    width: calc(100% - 200px);
-  }
-  footer {
-  margin-left: auto !important;
-  width: 100% !important;
-  }
 
   .info-bar {
 
     background-color: rgba($light-grey, .1);
     margin-right: inherit;
     padding: 2rem 3rem;
+
+    @media screen and (max-width: $break - 1) {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
 
     img {
       margin-right: 1.6rem;
@@ -27,8 +24,10 @@
     }
 
     .cd-btn-solid {
-      padding-left: 4.5rem;
-      padding-right: 4.5rem;
+      padding-left: 4rem;
+      padding-right: 4rem;
+      font-size: 1.4rem;
+      cursor: pointer;
     }
   }
 

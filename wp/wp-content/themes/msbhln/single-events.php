@@ -6,32 +6,41 @@
 
 <div class="row info-bar">
 
-  <div class="col-6 col-md-3 d-flex flex-nowrap justify-content-center align-items-center">
-    <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/cal.svg"/>
+  <div class="my-3 col-12 col-lg-3 d-flex flex-wrap flex-lg-nowrap flex-column flex-lg-row justify-content-center align-items-center">
+    <div class="d-flex">
+      <img class="img-fluid d-inline d-lg-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/cal.svg"/>
+      <h4 class="d-block d-lg-none">Date</h4>
+    </div>
     <div>
-      <h4>Date</h4>
+      <h4 class="d-none d-lg-block">Date</h4>
       <p><?php echo date( 'M. j, Y', $date ); ?></p>
     </div>
   </div>
 
-  <div class="col-6 col-md-3 d-flex flex-nowrap justify-content-center align-items-center">
-    <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/grey-clock.svg"/>
+  <div class="my-3 col-12 col-lg-3 d-flex flex-wrap flex-lg-nowrap flex-column flex-lg-row justify-content-center align-items-center">
+    <div class="d-flex">
+      <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/grey-clock.svg"/>
+      <h4 class="d-block d-lg-none">Time</h4>
+    </div>
     <div>
-      <h4>Time</h4>
+      <h4 class="d-none d-lg-block">Time</h4>
       <p><?php the_field( 'start_time' ); ?></p>
     </div>
   </div>
 
-  <div class="col-6 col-md-3 d-flex flex-nowrap justify-content-center align-items-center">
-    <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/cards.svg"/>
+  <div class="my-3 col-12 col-lg-3 d-flex flex-wrap flex-lg-nowrap flex-column flex-lg-row justify-content-center align-items-center">
+    <div class="d-flex">
+      <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/cards.svg"/>
+      <h4 class="d-block d-lg-none">Cost</h4>
+    </div>
     <div>
-      <h4>Cost</h4>
+      <h4 class="d-none d-lg-block">Cost</h4>
       <p>$<?php the_field( 'cost' ); ?></p>
     </div>
   </div>
 
-  <div class="col-6 col-md-3 d-flex justify-content-center align-items-center">
-    <a class="cd-btn-solid" href="<?php the_field( 'registration_link' ); ?>" target="_blank">Register  <i class="fa fa-chevron-right"></i></a>
+  <div class="col-12 col-lg-3 d-flex justify-content-center align-items-center">
+    <button class="cd-btn-solid" href="<?php the_field( 'registration_link' ); ?>" target="_blank">Register  <i class="fa fa-chevron-right"></i></button>
   </div>
 
 </div>
