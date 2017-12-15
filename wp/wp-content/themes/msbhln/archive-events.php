@@ -31,7 +31,7 @@
           <p class="color-accent font-light mr-5"><img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/clock.svg"/>  <?php the_field( 'start_time' ); ?></p>
         </div>
 
-        <h3 class="d-block d-lg-none mt-3"><?php the_title(); ?></h3>
+        <h3 class="d-block d-lg-none text-center mt-3"><?php the_title(); ?></h3>
 
         <?php if ( get_field( 'location' ) ) : ?>
           <h5>Location: <?php the_field( 'location' ); ?></h5>
