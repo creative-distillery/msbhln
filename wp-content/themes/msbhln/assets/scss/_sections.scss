@@ -1,0 +1,222 @@
+$transparency: .8;
+
+@mixin bg-overlay {
+  background-image:  url("../img/bg-img-reduced2.jpg"), linear-gradient(rgba($teal, 1), rgba($teal, 1));
+  background-blend-mode: overlay;
+  @content;
+}
+
+@mixin bg-normal {
+  background-image: linear-gradient(rgba($teal, $transparency), rgba($teal, $transparency)), url("../img/bg-img-reduced2.jpg");
+  @content;
+}
+
+.header-img {
+  @include bg-normal {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+// --- Header Section --- //
+
+.header-section {
+
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 10rem 0 10rem;
+
+  text-align: center;
+
+  h1, p, a {
+    color: white;
+    margin: 3rem 0;
+  }
+
+  p {
+    width: 670px;
+    max-width: 100%;
+    @include mx-auto;
+  }
+
+}
+
+
+
+
+// .default-header {
+//   margin-bottom: 11rem;
+// }
+
+
+
+// --- Events Section --- //
+
+.events-section {
+
+  background-color: $orange;
+  padding: 0 5%;
+
+  .title {
+    text-align: center;
+    h2 {
+      color: white;
+      padding: 1.5rem 0;
+    }
+  }
+
+  .event {
+    background-color: white;
+    color: $font-color;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+
+    p {
+      color: $accent-color;
+    }
+
+
+    .month {
+      @include event-month {font-size: 4.8rem;}
+    }
+
+
+    .date {
+      @include event-date {font-size: 12rem;};
+    }
+
+    .date-time {
+      padding-left: 1.2rem;
+      display: inline;
+    }
+    .day, .time {
+      font-size: 3.2rem;
+    }
+
+    .excerpt p {
+      color: $font-color;
+    }
+
+    .cd-btn {
+      border-color: $accent-color;
+      color: $accent-color;
+      margin: 0 .25rem;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+}
+
+
+
+// --- News Section --- //
+
+.news-section {
+  .title {
+    padding: 4rem 0;
+    color: $accent-color;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .content {
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+
+    h3, p {
+      width: 100%;
+      max-width: 100%;
+      padding-right: 2rem;
+    }
+
+    .cd-btn {
+      border-color: $font-color;
+      display: inline;
+    }
+  }
+
+
+}
+
+
+// --- Partnership Section --- //
+
+.partnership-section {
+  margin-bottom: 5rem;
+
+  h3, p {
+    margin-bottom: 4rem;
+  }
+  .logos {
+    display: flex;
+    justify-content: center;
+  }
+
+  img {
+    width: 250px;
+  }
+}
+
+
+
+// --- Footer --- //
+
+.footer {
+  background-color: $light-grey;
+
+  @media screen and (min-width: $break) {
+    padding: 3.5rem 4rem;
+  }
+
+  h2 {
+    margin-bottom: 3.5rem;
+    color: white;
+  }
+  p {
+    margin-bottom: 0;
+    color: white;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+  .address {
+    margin-bottom: 2.6rem;
+  }
+  .numbers {
+    display: flex;
+    flex-flow: row nowrap;
+
+    div {
+      flex: 0 0 50%;
+    }
+  }
+
+  .logos {
+    div {
+      display: flex;
+      align-items: center;
+    }
+    img {
+      width: 100%;
+      opacity: .4;
+    }
+  }
+
+  iframe {
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 4.3rem;
+  }
+}

@@ -1,0 +1,127 @@
+/*
+Theme Name: MSBHLN
+Theme URI: https://msbhln.com
+Author: Creative Distillery
+Author URI: https://creativedistillery.com
+Description: WordPress Theme for Mississippi Behavioral Health Learning Network built by Creative Distillery in Jackson, MS
+Version: 1.0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options
+This theme, like WordPress, is licensed under the GPL.
+*/
+
+/*------------------------------------------------*/
+/*----------     TABLE OF CONTENTS:     ----------*/
+/*------------------------------------------------*/
+
+/*------------------------------------------------
+  -- General
+  -- Headers
+  -- Front Page
+  -- Page
+  -- Footers
+  -- Blog
+------------------------------------------------*/
+
+/*-------------------------------------------------*/
+/*---------------    Front Page     ---------------*/
+/*-------------------------------------------------*/
+
+.home-content-wrap {
+  width: 75%;
+  margin: 2rem auto;
+  max-width: 100%;
+  text-align: center;
+
+}
+/*----------------------------------------------*/
+/*---------------     FOOTER     ---------------*/
+/*----------------------------------------------*/
+.cd-footer {
+  background-color: #EEEEEE;
+  margin-top: 1rem;
+}
+.quick-links-container {
+  line-height: 18px;
+}
+.quick-links {
+  padding: .5rem 1rem;
+}
+.cd-copyright {
+  font-size: 75%;
+  color: #A7A7A7;
+}
+
+
+/*--------------------------------------------*/
+/*---------------     Blog     ---------------*/
+/*--------------------------------------------*/
+
+.cd-blog-card {
+  background-color: #EEEEEE;
+  /*height: 300px;*/
+  margin: 5px;
+  display: flex;
+}
+
+.cd-blog-desc {
+  padding: 1rem .75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /*width: 100%;*/
+}
+
+.cd-blog-tails a {
+  color: #4A4A4A;
+}
+
+.cd-blog-desc > h3 {
+  font-size: 1rem;
+}
+
+.blog-thumb {
+  width: 60%;
+  height: auto;
+}
+
+.cd-blog-more {
+  font-style: italic;
+  font-family: serif;
+}
+
+.cd-blog-post-wrap {
+  width:600px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cd-blog-post-wrap > h3 {
+  padding: 1rem 0;
+}
+
+.cd-blog-post-wrap > h2 {
+  padding-bottom: 1rem;
+}
+
+.cd-blog-post-tails > p {
+  margin: 0px;
+  font-size: .9rem;
+  color: #A7A7A7;
+}
+
+.cd-blog-post-tails > p:nth-child(1) {
+  color: black;
+}
+
+.cd-blog-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-nav-link > a {
+  font-style: italic;
+  font-family: serif;
+}

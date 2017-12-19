@@ -1,0 +1,46 @@
+.cd-btn {
+  border: 1px solid white;
+  padding: 1rem 1.25rem;
+  border-radius: 1px;
+  transition: all .2s;
+
+  @include serif-regular {
+    font-style: italic;
+  }
+
+  &:hover {
+    background-color: $accent-color;
+    color: white;
+    text-decoration: none;
+    border-color: transparent;
+  }
+
+  &-solid {
+    @extend .cd-btn;
+    background-color: $accent-color;
+    color: white;
+    border: 0px;
+  }
+
+
+}
+
+.color-accent {
+  color: $accent-color;
+  &.cd-btn {
+    border-color: $accent-color;
+  }
+}
+
+.color-font {
+  color: $font-color;
+  &.cd-btn {
+    border-color: $font-color;
+  }
+}
+
+hr.seperator {
+  margin: 4.6rem 4rem;
+  border-top-color: $teal;
+  border-top-width: 2px;
+}

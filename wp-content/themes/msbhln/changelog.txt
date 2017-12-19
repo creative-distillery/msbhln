@@ -1,0 +1,6 @@
+CHANGELOG
+
+
+--- v. 1.0.1 ---
+
+- Fixed CTA Menu items to show up as buttons.
